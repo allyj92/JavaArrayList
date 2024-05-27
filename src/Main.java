@@ -21,31 +21,30 @@ public class Main {
 //            System.out.println(numbers.get(i));
 //        }
 //
-       ArrayList.ListIterator li = numbers.listIterator();
-       while(li.hasNext()){
-           System.out.println(li.next());
-       }
-
-       System.out.println(li.previous());
-       System.out.println(li.previous());
-       System.out.println(li.previous());
-       System.out.println(li.previous());
-
-
-        while(li.hasPrevious()){
+        ArrayList.ListIterator li = numbers.listIterator();
+        while (li.hasNext()) {
             System.out.println(li.next());
         }
 
-        while(li.hasNext()){
-            int number = (int)li.next();
-            if(number == 30){
-                li.remove(35);
+        System.out.println(li.previous());
+        System.out.println(li.previous());
+        System.out.println(li.previous());
+        System.out.println(li.previous());
+
+
+        while (li.hasPrevious()) {
+            System.out.println(li.next());
+        }
+
+        while (li.hasNext()) {
+            int number = (int) li.next();
+            if (number == 30) {
+//                li.remove(35);
             }
             System.out.println(number);
         }
 
         System.out.println(numbers);
-
 
 
     }
